@@ -37,7 +37,6 @@ a{
 .grid-container{
     display:grid;
     grid-template-columns: repeat(2, 1fr);
-    /*grid-template-rows: repeat(4, 1fr);*/
     grid-gap: 10px;
     padding: 20px;
 }
@@ -66,8 +65,21 @@ a{
 }
 .tilt{
     padding-top:50%;
-padding-left: 20%;
+    padding-left: 30%;
+    
 }
 video{
     padding-top: 50%;
 }
+var vid = document.getElementById("myVideo");
+
+function playVid(dancing.mov) {
+    vid.play();
+    vid.pause(japanese.mov);
+}
+
+function pauseVid() {
+    vid.pause();
+}
+
+/*figure out how to make video stop/pause when you click another video*/
